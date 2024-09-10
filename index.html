@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Risco Gestacional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cálculo de Risco Gestacional BY EDUARDA NAIANY</h1>
+        <form id="risk-form">
+            <h2>Informações Individuais</h2>
+
+            <label for="age">Idade:</label>
+            <select id="age" name="age">
+                <option value="0">Entre 15 e 39 anos</option>
+                <option value="2">Menor que 15 anos</option>
+                <option value="2">Maior que 40 anos</option>
+            </select>
+
+            <label for="race">Raça:</label>
+            <select id="race" name="race">
+                <option value="0">Outra</option>
+                <option value="1">Negra</option>
+            </select>
+
+            <label for="education">Escolaridade:</label>
+            <select id="education" name="education">
+                <option value="0">5 anos ou mais de estudo</option>
+                <option value="1">Menos de 5 anos de estudo</option>
+            </select>
+
+            <label for="smoker">Tabagismo:</label>
+            <select id="smoker" name="smoker">
+                <option value="0">Não</option>
+                <option value="2">Sim</option>
+            </select>
+
+            <label for="violence">Indícios de violência:</label>
+            <select id="violence" name="violence">
+                <option value="0">Não</option>
+                <option value="2">Sim</option>
+            </select>
+
+            <label for="housing">Condições de moradia:</label>
+            <select id="housing" name="housing">
+                <option value="0">Moradia estável</option>
+                <option value="2">Situação de rua/Comunidades indígenas ou quilombolas</option>
+            </select>
+
+            <label for="weight">Peso no início da gestação:</label>
+            <select id="weight" name="weight">
+                <option value="0">IMC normal</option>
+                <option value="2">Baixo peso (IMC &lt; 18)</option>
+                <option value="1">Sobrepeso (IMC 25-29,9)</option>
+                <option value="4">Obesidade (IMC &gt; 30)</option>
+                <option value="10">Obesidade Grau 3</option>
+            </select>
+
+            <h2>História Reprodutiva Anterior</h2>
+
+            <label for="abortions">Abortos consecutivos:</label>
+            <select id="abortions" name="abortions">
+                <option value="0">Nenhum</option>
+                <option value="2">Dois consecutivos ou três não consecutivos</option>
+            </select>
+
+            <label for="prematurity">Prematuridade:</label>
+            <select id="prematurity" name="prematurity">
+                <option value="0">Não</option>
+                <option value="2">Sim (1 parto)</option>
+                <option value="10">Mais de um parto prematuro</option>
+            </select>
+
+            <label for="growth">Restrição de crescimento intrauterino:</label>
+            <select id="growth" name="growth">
+                <option value="0">Não</option>
+                <option value="2">Sim</option>
+            </select>
+
+            <label for="stillbirth">Natimorto sem causa:</label>
+            <select id="stillbirth" name="stillbirth">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <h2>Intercorrências Clínicas/Obstétricas na Gestação Atual</h2>
+
+            <label for="preeclampsia">Pré-eclâmpsia:</label>
+            <select id="preeclampsia" name="preeclampsia">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="diabetes">Diabetes Gestacional:</label>
+            <select id="diabetes" name="diabetes">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="urinary">Infecção Urinária de repetição:</label>
+            <select id="urinary" name="urinary">
+                <option value="0">Não</option>
+                <option value="10">Sim (3 ou mais vezes)</option>
+            </select>
+
+            <label for="fetus-growth">Restrição de crescimento intrauterino:</label>
+            <select id="fetus-growth" name="fetus-growth">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="macrosomia">Macrossomia fetal (percentil acima de 90%):</label>
+            <select id="macrosomia" name="macrosomia">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <h2>Condições Clínicas Prévias à Gestação</h2>
+
+            <label for="hypertension">Hipertensão arterial:</label>
+            <select id="hypertension" name="hypertension">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="diabetes-previous">Diabetes Mellitus 1 ou 2:</label>
+            <select id="diabetes-previous" name="diabetes-previous">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="psychiatric">Doença psiquiátrica grave:</label>
+            <select id="psychiatric" name="psychiatric">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <button type="button" onclick="calculateRisk()">Calcular Risco</button>
+        </form>
+
+        <div id="result" class="result">
+            <h2>Resultado:</h2>
+            <p id="risk-level"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
