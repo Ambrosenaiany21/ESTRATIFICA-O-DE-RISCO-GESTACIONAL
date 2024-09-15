@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: Helvetica, sans-serif;
+    background-color: #f59696;
     margin: 0;
     padding: 20px;
 }
@@ -8,14 +8,14 @@ body {
 .container {
     max-width: 600px;
     margin: auto;
-    background-color: #fff;
+    background-color: #dfe8fa;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2 {
-    color: #333;
+    color: #000000;
     text-align: center;
 }
 
@@ -55,7 +55,7 @@ button:hover {
 .result {
     margin-top: 20px;
     padding: 20px;
-    background-color: #e9ecef;
+    background-color: #fff3f3;
     border-radius: 8px;
     text-align: center;
 }

@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Cálculo de Risco Gestacional BY EDUARDA NAIANY</h1>
+        <h1>Cálculo de Estratificação de Risco Gestacional</h1>
         <form id="risk-form">
             <h2>Informações Individuais</h2>
 
@@ -85,6 +85,48 @@
                 <option value="10">Sim</option>
             </select>
 
+            <label for="incompetence">Incompetência istmo Cervical:</label>
+            <select id="incompetence" name="incompetence">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="isoimmunization">Isoimonização Rh:</label>
+            <select id="isoimmunization" name="isoimmunization">
+                <option value="0">Não</option>
+                <option value="5">Sim</option>
+            </select>
+
+            <label for="preeclampsia">Pré-eclâmpsia com resultado ruim sindrome de HELLP, óbito Fetal intrauterino, internação materna em UTI:</label>
+            <select id="preeclampsia" name="preeclampsia">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="psychosis">Psicose puerperal na gestação anterior:</label>
+            <select id="psychosis" name="psychosis">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="transplant">Transplante:</label>
+            <select id="transplant" name="transplant">
+                <option value="0">Não</option>
+                <option value="5">Sim</option>
+            </select>
+
+            <label for="bariatric">Cirúrgia Bariátrica há menos de 6 meses:</label>
+            <select id="bariatric" name="bariatric">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="accretism">Acretismo placentário:</label>
+            <select id="accretism" name="accretism">
+                <option value="0">Não</option>
+                <option value="2">Sim</option>
+            </select>
+
             <h2>Intercorrências Clínicas/Obstétricas na Gestação Atual</h2>
 
             <label for="preeclampsia">Pré-eclâmpsia:</label>
@@ -105,6 +147,12 @@
                 <option value="10">Sim (3 ou mais vezes)</option>
             </select>
 
+            <label for="renal">Calculo Renal com obstrução:</label>
+            <select id="renal" name="senal">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
             <label for="fetus-growth">Restrição de crescimento intrauterino:</label>
             <select id="fetus-growth" name="fetus-growth">
                 <option value="0">Não</option>
@@ -117,9 +165,153 @@
                 <option value="10">Sim</option>
             </select>
 
+            <label for="polyhydramnios">Polidrâmnio ou Oligodrâmnio:</label>
+            <select id="polyhydramnios" name="polyhydramnios">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="shortneck">Colo Curto em USG entre 20-24 semanas:</label>
+            <select id="shortneck" name="shortneck">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="accretismsuspect">Suspeita de Acretismo Placentário:</label>
+            <select id="accretismsuspect" name="accretismsuspect">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="placentaprevia">Placenta Prévia com diagnósticos após 28 semanas:</label>
+            <select id="placentaprevia" name="placentaprevia">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="liverdisease">Hepatopatias:</label>
+            <select id="liverdisease" name="liverdisease">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="anemia">Anemia Grave ou refratária ao tratamento:</label>
+            <select id="anemia" name="anemia">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="isoimmunizationrh">Isoimunização Rh:</label>
+            <select id="isoimmunizationrh" name="isoimmunizationrh">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="cancer">Cancer Materno com diagnóstico na gestação:</label>
+            <select id="cancer" name="cancer">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="neoplasm">Neoplasia Ginecológica na gestação atual:</label>
+            <select id="neoplasm" name="neoplasm">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="breastcancer">Alta suspeita clínica de câncer de mama:</label>
+            <select id="breastcancer" name="breastcancer">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="cervicalcancer">Lesão de alto Grau em Colo uterino NICII ou NICIII:</label>
+            <select id="cervicalcancer" name="cervicalcancer">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="fetalmalformation">Suspeita de malformação fetal ou arritmia Fetal:</label>
+            <select id="fetalmalformation" name="fetalmalformation">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="twinning">Gemelaridade:</label>
+            <select id="twinning" name="twinning">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="syphilis">Sífilis terciária ou com achados sugestivos de sífilis côngenita ou resistente ao tratamento com penicilina:</label>
+            <select id="syphilis" name="syphilis">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="condyloma">Condiloma acuminado no canal vaginal/colo ou lesões extensas em genital ou perianal:</label>
+            <select id="condyloma" name="condyloma">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="hepatitis">Hepatites Agudas:</label>
+            <select id="hepatitis" name="hepatitis">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="leprosy">Hanseníase com diagnóstico na gestação atual:</label>
+            <select id="leprosy" name="leprosy">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="aids">AIDS/HIV com diagnóstico na Gestação:</label>
+            <select id="aids" name="aids">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="tuberculosis">Tuberculose:</label>
+            <select id="tuberculosis" name="tuberculosis">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="toxoplasmosis">Toxoplasmose ou rubéola ou citomegalovírus diagnosticado na gestação atual:</label>
+            <select id="toxoplasmosis" name="toxoplasmosis">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="drugs">Dependência e/ou uso abusivo de drogas lícitas e ilícitas:</label>
+            <select id="drugs" name="drugs">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="endocrinopathies">Endocrinopatias descompensadas: deve ser encaminhadas ao endocrinologista:</label>
+            <select id="endocrinopathies" name="endocrinopathies">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="dengue">Suspeita de dengue, Zika ou Chikungunya: quadro febril exantemático:</label>
+            <select id="dengue" name="dengue">
+                <option value="0">Não</option>
+                <option value="5">Sim</option>
+            </select>
+
+            <label for="covid19">Suspeita ou confirmação de COVID-19:</label>
+            <select id="covid19" name="covid19">
+                <option value="0">Não</option>
+                <option value="5">Sim</option>
+            </select>
+
             <h2>Condições Clínicas Prévias à Gestação</h2>
 
-            <label for="hypertension">Hipertensão arterial:</label>
+            <label for="hypertension">Hipertensão arterial descompensada:</label>
             <select id="hypertension" name="hypertension">
                 <option value="0">Não</option>
                 <option value="10">Sim</option>
@@ -131,8 +323,62 @@
                 <option value="10">Sim</option>
             </select>
 
+            <label for="thyroid-diseases">Tireoidopatias: hipertireoidismo, hipotireiodismo:</label>
+            <select id="thyroid-diseases" name="thyroid-diseases">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
             <label for="psychiatric">Doença psiquiátrica grave:</label>
             <select id="psychiatric" name="psychiatric">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="hematology">Doença Hematológica Grave:</label>
+            <select id="hematology" name="hematology">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="heart-disease">Cardiopatias com repercussão hemodinâmica:</label>
+            <select id="heart-disease" name="heart-disease">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="pneumopathies">Pneumopatias Graves: DPOC, Asma:</label>
+            <select id="pneumopathies" name="pneumopathies">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+            
+            <label for="auto-immune">Doença Autoimune:</label>
+            <select id="auto-immune" name="auto-immune">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="teratogenicity">Medicamentos Teratogênicos:</label>
+            <select id="teratogenicity" name="teratogenicity">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="kidney-disease">Doença Renal Grave:</label>
+            <select id="kidney-disease" name="kidney-disease">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="hemoglobin">Hemopatias e Anemia Grave:</label>
+            <select id="hemoglobin" name="hemoglobin">
+                <option value="0">Não</option>
+                <option value="10">Sim</option>
+            </select>
+
+            <label for="liver-disease">Hepatopatias Crônicas: hepatites, cirrose:</label>
+            <select id="liver-disease" name="liver-disease">
                 <option value="0">Não</option>
                 <option value="10">Sim</option>
             </select>
@@ -146,5 +392,11 @@
         </div>
     </div>
     <script src="script.js"></script>
+
+
+<div class="footnotes">
+    <p>Fonte: Documento de Estratificação de Risco Gestacional - Versão 02/2022.</p>
+    <p>Desenvolvido por: Eduarda Naiany de Oliveira Macedo: Todos os direitos reservados.</p>
+</div>
 </body>
 </html>
